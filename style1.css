@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.navbar-brand img {
+    width: 100px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 50px; /* Restrict the maximum height */
+    margin-right:100px; /* Space between the image and the navbar links */
+}
+
+
+.content-box {
+    background-color: #fff48d63; /* Light background color */
+    border: 1px solid #bbb7b7; /* Blue border */
+    padding: 40px; /* Add padding inside the content box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+    margin-top: 50px; /* Add margin to give space from the heading */
+}
+.image{
+    background-image: url(crick.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+   
+}
+
+.end-content{
+    font-size: larger;
+    color: #f8f9fa;
+    margin-top: 150px;
+    font-weight: 10;
+}
+h1{
+    color: rgb(28, 36, 70);
+    font-weight: 900;
+    font-size: 65px;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+}
+
+
+
+.image-content img {
+    max-width: 40%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgb(185, 184, 184);
+}
+.event-card {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(30%); /* Dim the image */
+}
+
+.event-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.event-overlay h3 {
+    font-size: 48px;
+    margin: 0;
+}
+
+
+
+
+.event-overlay p {
+    font-size: 20px;
+    margin: 5px 0 0;
+}
+
+h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+para {
+    color: #f1eeee;
+}
+.footer-bottom {
+    background-color: #1b1b1b; /* Grey background */
+}
+
+.cc-logo {
+    max-width: 250px; /* Adjust logo size as needed */
+    height: 100px;
+    margin-right: 55px;
+}
+
+.footer-content {
+    margin-left: 20px; /* Space between logo and text */
+}
+
+.footer-bottom a {
+    text-decoration: underline; /* Underline the link */
+    color: #ffcc00; /* Change link color for better visibility */
+}
