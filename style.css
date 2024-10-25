@@ -1,0 +1,318 @@
+/* General Styles */
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.8em; /* Increased font size for better visibility */
+    font-weight: bold;
+    color: #fff;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.desktop-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu ul {
+    list-style: none;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images\ \(2\).jpeg'); /* Ensure the image path is correct */
+    background-size: cover;
+    background-position: center; /* Changed position to center for better focus */
+    background-repeat: no-repeat;
+    height: 70vh; /* Full viewport height */
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5em; /* Increased font size */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3em; /* Slightly increased font size */
+}
+
+/* Featured Players Section */
+#featured-players {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f9fa; /* Added background color */
+}
+
+.players-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.player-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.player-card h3 {
+    margin: 15px 0 5px;
+}
+
+.player-card p {
+    color: #666;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+    .mobile-menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.2em; /* Adjust for smaller screens */
+    }
+    
+    .hero p {
+        font-size: 1.1em;
+    }
+}
+/* Main Program Section */
+.main-program {
+    background-color: #2f2f2f; /* Dark background */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.main-program h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.main-program h2::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #e63946; /* Accent color (red) */
+    display: block;
+    margin: 10px auto 0;
+}
+
+.program-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.program-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-card i {
+    font-size: 2.5em;
+    color: #e63946; /* Accent color for icons */
+    margin-bottom: 15px;
+}
+
+.program-card h3 {
+    color: #e63946; /* Red headings */
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.program-card p {
+    font-size: 0.9em;
+    color: #d3d3d3;
+}
+
+.program-link {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #e63946;
+    font-weight: bold;
+    font-size: 1em;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.program-link:hover {
+    border-bottom: 2px solid #e63946;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .program-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+/* Partners Section */
+#partners {
+    background-color: #333;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#partners h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #fff;
+    position: relative;
+}
+
+#partners h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #ff4500;
+    margin: 10px auto;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.partners-container img {
+    max-width: 120px;
+    max-height: 40px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.partners-container img:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+    font-size: 14px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.cc-logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
